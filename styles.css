@@ -1,0 +1,64 @@
+body {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #ffffff; /* Light text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333; /* Dark header color */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333; /* Dark footer color */
+    color: #ffffff; /* Light text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Add a subtle box shadow to sections for a modern look */
+section {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    footer {
+        padding: 15px;
+    }
+}
