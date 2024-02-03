@@ -1,64 +1,325 @@
 body {
-    background-color: #1a1a1a; /* Dark background color */
-    color: #ffffff; /* Light text color */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Use min-height to ensure the body takes at least the full height of the viewport */
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #61dafb;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger label {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+/* Contact form styles */
+.contact-form {
+    text-align: center;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.contact-form form {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #1f1f1f;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Use the background color you want for the footer */
+    color: #fff;
+    margin-top: auto; /* Push the footer to the bottom */
+}
+button {
+    font-family: inherit;
+    border: none;
+    outline: 1px dotted rgb(37, 37, 37);
+    outline-offset: -4px;
+    background: hsl(0deg 0% 75%);
+    box-shadow: inset -1px -1px #292929, inset 1px 1px #fff, inset -2px -2px rgb(158, 158, 158), inset 2px 2px #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+  
+  button:active {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #292929, inset -2px -2px #ffffff, inset 2px 2px rgb(158, 158, 158);
+  }
+  .btn {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    background-color: #eeeeed;
+    border-radius: 80px;
+    border: none;
+    padding: 0 80px;
+    transition: all 0.2s ease;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .btn span {
+    position: absolute;
+    z-index: 99;
+    width: 150px;
+    height: 50px;
+    border-radius: 80px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 2px;
+    color: #eeeeed;
+    background-color: #1f1f1f;
+    padding: 0 10px;
+    transition: all 1.2s ease;
+  }
+  
+  .btn .container {
+    display: flex;
+    width: 150px;
+    border-radius: 80px;
+    line-height: 50px;
+  }
+  
+  .btn svg {
+    padding: 0 5px;
+    opacity: 0;
+  }
+  
+  .btn .container svg:nth-of-type(1) {
+    transition-delay: 0.65s;
+  }
+  
+  .btn .container svg:nth-of-type(2) {
+    transition-delay: 0.8s;
+  }
+  
+  .btn .container svg:nth-of-type(3) {
+    transition-delay: 0.5s;
+  }
+  
+  .btn:hover span {
+    opacity: 0;
+  }
+  
+  .btn:hover svg {
+    opacity: 1;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #61dafb;
+}
+
+/* Hamburger menu styles */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger label {
+    cursor: pointer;
+    padding: 5px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hero section styles */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+/* Accounts styles */
+.accounts {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.accounts ul {
+    list-style: none;
     padding: 0;
 }
 
-header {
-    background-color: #333; /* Dark header color */
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    margin: 0;
-    font-size: 2em;
-    letter-spacing: 3px;
-}
-
-section {
-    padding: 40px;
-    text-align: center;
-}
-
-p {
+.accounts li {
     font-size: 1.2em;
-    line-height: 1.6;
 }
 
+/* Button styles */
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #1f1f1f;
+}
+
+/* Footer styles */
 footer {
-    background-color: #333; /* Dark footer color */
-    color: #ffffff; /* Light text color */
-    padding: 20px;
     text-align: center;
-}
-
-/* Add a subtle box shadow to sections for a modern look */
-section {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Mobile responsiveness */
-@media only screen and (max-width: 600px) {
-    header {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 1.5em;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    footer {
-        padding: 15px;
-    }
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
 }
