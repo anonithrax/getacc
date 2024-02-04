@@ -1,4 +1,6 @@
 body {
+    background-color: #333;
+    color: snow;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -323,3 +325,14 @@ footer {
     background-color: #333;
     color: #fff;
 }
+.button {
+    position: relative;
+
+}
+
+/* This css of accounts.html file */
+
+.accounts {
+    background-color: #333;
+}
+
