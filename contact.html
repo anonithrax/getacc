@@ -1,18 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Your Website</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us - GetAccts!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black; /* Updated background color */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #069; /* Updated navbar color */
+            color: #fff;
+            padding: 1em;
+        }
+
+        .logo {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0.5em 1em;
+            display: block;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+
+        .bar {
+            background-color: #069;
+            height: 3px;
+            width: 25px;
+            margin: 4px 0;
+        }
+
+        .contact-form {
+            flex: 1;
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 1em;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 0.5em;
+        }
+
+        input,
+        textarea {
+            padding: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        button {
+            background-color: #069;
+            border: none;
+            padding: 0.8em 1em;
+            text-decoration: none;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #04a;
+        }
+
+        footer {
+            background-color: black; /* Updated footer color */
+            text-align: center;
+            padding: 1em 0;
+            color: #fff;
+            margin-top: auto;
+        }
+    </style>
 </head>
+
 <body>
     <header class="navbar">
-        <div class="logo">Your Logo</div>
+        <div class="logo">G@!</div>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="hamburger">
@@ -42,9 +140,10 @@
     </section>
 
     <footer>
-        <p>© 2024 Your Website. All rights reserved.</p>
+        <p>© 2024 G@!. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
