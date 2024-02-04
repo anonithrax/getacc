@@ -9,44 +9,36 @@
 </head>
 
 <body>
-    <header>
-        <div>Your Logo</div>
-        <nav>
+    <header id="header" class="header">
+        <div id="logo" class="logo">G@!</div>
+        <nav id="nav" class="nav">
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/" id="home-link" class="nav-link">Home</a></li>
+                <li><a href="contact.html" id="contact-link" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-        <div>
-            <input type="checkbox" id="menu-toggle">
-            <label for="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-        </div>
     </header>
 
-    <section>
-        <h1>Sell your desired Accounts!</h1>
-        <p>Offering various types of accounts for buying or selling.</p>
-        <div>
+    <section id="main" class="main-section">
+        <h1 id="main-title" class="main-title">Sell your desired Accounts!</h1>
+        <p id="main-description" class="main-description">Offering various types of accounts for buying or selling.</p>
+        <div id="accounts" class="account-list">
             <ul>
                 <li>Minecraft</li>
                 <li>Roblox</li>
                 <li>Fortnite</li>
                 <li>Hotmails</li>
             </ul>
-            <p>This is what we offer for now!</p>
-            <button>
-                <a href="accounts.html">
-                    <p>Click here!</p>
+            <p id="offer-text" class="offer-text">This is what we offer for now!</p>
+            <button id="cta-button" class="cta-button">
+                <a href="accounts.html" id="cta-link" class="cta-link">
+                    <p id="cta-text" class="cta-text">Click here!</p>
                 </a>
             </button>
         </div>
-        <button>
-            <span>Quote Bid!</span>
-            <div>
+        <button id="quote-button" class="quote-button">
+            <span id="quote-text" class="quote-text">Quote Bid!</span>
+            <div id="quote-icon" class="quote-icon">
                 <svg height="35" width="35" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1024 1024">
                     <!-- SVG path for the first icon -->
                     <path fill=""
@@ -58,7 +50,7 @@
         </button>
     </section>
 
-    <footer>
+    <footer id="footer" class="footer">
         <p>© 2024 Your Website. All rights reserved.</p>
     </footer>
 
