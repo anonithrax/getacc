@@ -87,43 +87,43 @@ body {
     color: #666;
 }
 
-.cta-button,
-.quote-button {
-    background-color: #069;
-    border: none;
-    padding: 1em 2em;
-    text-decoration: none;
-    color: #fff;
+.cta-button {
+    padding: 0.1em 0.25em;
+    width: 13em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
     cursor: pointer;
-    display: inline-block;
-    margin-top: 1em;
+}
+
+.cta-button span {
     position: relative;
-    overflow: hidden;
-}
-
-.cta-button:hover::after,
-.quote-button:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-}
-
-.cta-link,
-.quote-icon {
-    text-decoration: none;
-    color: #fff;
     display: flex;
+    justify-content: center;
     align-items: center;
+    bottom: 0.4em;
+    width: 8.25em;
+    height: 2.5em;
+    background-color: #069;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
 }
 
-.quote-icon {
-    margin-left: 0.5em;
+.cta-button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
 }
+
+.cta-button span:not(hover) {
+    transition: all 1s;
+}
+
 
 .footer {
     background-color: #111;
@@ -218,9 +218,9 @@ body {
     border-radius: 7px;
     cursor: pointer;
     transition: all 0.3s;
-  }
-  
-  .svgContainer {
+}
+
+.svgContainer {
     width: 100%;
     height: 100%;
     display: flex;
@@ -232,9 +232,9 @@ body {
     border-radius: 10px;
     transition: all 0.3s;
     border: 1px solid rgba(156, 156, 156, 0.466);
-  }
-  
-  .BG {
+}
+
+.BG {
     position: absolute;
     content: "";
     width: 100%;
@@ -244,15 +244,14 @@ body {
     border-radius: 10px;
     pointer-events: none;
     transition: all 0.3s;
-  }
-  
-  .Btn:hover .BG {
+}
+
+.Btn:hover .BG {
     transform: rotate(35deg);
     transform-origin: bottom;
-  }
-  
-  .Btn:hover .svgContainer {
+}
+
+.Btn:hover .svgContainer {
     background-color: rgba(156, 156, 156, 0.466);
     backdrop-filter: blur(4px);
-  }
-  
+}
