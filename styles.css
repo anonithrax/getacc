@@ -87,7 +87,8 @@ body {
     color: #666;
 }
 
-.cta-button {
+.cta-button,
+.quote-button {
     background-color: #069;
     border: none;
     padding: 1em 2em;
@@ -100,35 +101,7 @@ body {
     overflow: hidden;
 }
 
-.cta-button:hover::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    z-index: -1;
-}
-
-.cta-link {
-    text-decoration: none;
-    color: #fff;
-}
-
-.quote-button {
-    background-color: #17a;
-    border: none;
-    padding: 1em 2em;
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    margin-top: 1em;
-    position: relative;
-    overflow: hidden;
-}
-
+.cta-button:hover::after,
 .quote-button:hover::after {
     content: "";
     position: absolute;
@@ -138,6 +111,14 @@ body {
     height: 100%;
     background: rgba(255, 255, 255, 0.2);
     z-index: -1;
+}
+
+.cta-link,
+.quote-icon {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
 }
 
 .quote-icon {
@@ -152,6 +133,11 @@ body {
     bottom: 0;
     width: 100%;
     color: #555;
+}
+
+.footer a {
+    color: #69a;
+    text-decoration: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -169,5 +155,104 @@ body {
     }
 }
 
-/* this style for contact page */
+/* Additional styles for the contact page */
+.contact-form {
+    background-color: #333;
+    color: #fff;
+    padding: 2em;
+}
 
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.contact-form button {
+    background-color: #069;
+    border: none;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+/* Style for social icons */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.social-icons i {
+    margin: 0 0.5em;
+    font-size: 2em;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #181818;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  
